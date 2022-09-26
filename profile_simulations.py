@@ -21,16 +21,16 @@ pool = multiprocessing.Pool(multiprocessing.cpu_count())
 # noise = [0.0001,0.001,0.01,0.1,1]
 # for n in noise:
 
-parameters_silencing_NS = [[20,0,200,1,0]]  # N, starting state, duration, noise, TRE
-parameters_silencing_5kb =[[40,0,200,1,0]]
+parameters_silencing_NS = [[20,0,200,0.5,0]]  # N, starting state, duration, noise, TRE
+parameters_silencing_5kb =[[40,0,200,0.5,0]]
 
-parameters_silencing_TRE_NS = [[20,0,200,1,1000]]  # N, starting state, duration, noise, TRE
-parameters_silencing_TRE_5kb =[[40,0,200,1,1000]]
+parameters_silencing_TRE_NS = [[20,0,200,0.5,1000]]  # N, starting state, duration, noise, TRE
+parameters_silencing_TRE_5kb =[[40,0,200,0.5,1000]]
 
-parameters_reactivation_NS = [[20,2,400,1,0]]
-parameters_reactivation_5kb =[[40,2,400,1,0]]
+parameters_reactivation_NS = [[20,2,400,0.5,0]]
+parameters_reactivation_5kb =[[40,2,400,0.5,0]]
 
-parameters_reactivation_SC = [[21,2,800,1,0]]
+parameters_reactivation_SC = [[21,2,800,0.5,0]]
 
 
 
