@@ -66,51 +66,51 @@ def simple(X_Y):
     
     
     
-    #print(nucs[:100])
-    positions = list(range(len(mt_region)))
-    x = positions*(80)
-    y= [i for i in range(80) for _ in range(len(mt_region))]
+    # #print(nucs[:100])
+    # positions = list(range(len(mt_region)))
+    # x = positions*(80)
+    # y= [i for i in range(80) for _ in range(len(mt_region))]
     
     
-    # show every 200th element
+    # # show every 200th element
     
-    Nucs = System_state[0:240:3]
-    #Nucs = System_state[720:960:3]
+    # Nucs = System_state[0:240:3]
+    # #Nucs = System_state[720:960:3]
     
-    # convert 2D nucleosome list to a 1D list
-    States = Nucs.flatten()
-    print(len(States))
-    print(len(Nucs))
+    # # convert 2D nucleosome list to a 1D list
+    # States = Nucs.flatten()
+    # print(len(States))
+    # print(len(Nucs))
     
-    colors = []
-    for elt in States:
-        if elt == 0:
-            colors.append('blue')
-        elif elt == 1:
-            colors.append('lightgrey')
-        elif elt==2:
-            colors.append('red')
+    # colors = []
+    # for elt in States:
+    #     if elt == 0:
+    #         colors.append('blue')
+    #     elif elt == 1:
+    #         colors.append('lightgrey')
+    #     elif elt==2:
+    #         colors.append('red')
     
     
-    #plotting
-    fig, ax = plt.subplots(figsize=(6,21))
-    #plt.title("beta= 0.01, sigma=1", fontsize = 25)
-    plt.scatter(x, y, c=colors, marker="o", lw=0.6)
-    plt.yticks(fontsize=20)
-    plt.ylabel("Generations", fontsize =25)
-    plt.xticks(fontsize=20)
-    #plt.savefig("timecourse_203_new.pdf")
+    # #plotting
+    # fig, ax = plt.subplots(figsize=(6,21))
+    # #plt.title("beta= 0.01, sigma=1", fontsize = 25)
+    # plt.scatter(x, y, c=colors, marker="o", lw=0.6)
+    # plt.yticks(fontsize=20)
+    # plt.ylabel("Generations", fontsize =25)
+    # plt.xticks(fontsize=20)
+    # #plt.savefig("timecourse_203_new.pdf")
         
     
 
     return list(Citrine_status_list), list(mCherry_status_list) 
 
-# #values for full(special set to 300)
-if __name__ == '__main__':
-    import time
-    #import cProfile
-    t1 = time.time()
-    simple([40, 0, 80, 1, 1000])
-    print(time.time() - t1)
+# # #values for full(special set to 300)
+# if __name__ == '__main__':
+#     import time
+#     #import cProfile
+#     t1 = time.time()
+#     simple([40, 0, 80, 1, 1000])
+#     print(time.time() - t1)
 
 
