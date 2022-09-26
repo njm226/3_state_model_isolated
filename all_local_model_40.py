@@ -32,13 +32,13 @@ def simple(X_Y):
    
     
     # local recruitment-rate M-catalysed change of U to M (recruited conversion)
-    alpha1 = 200*len(mt_region)#*0.05 
+    alpha1 = 250*len(mt_region)#*0.05 
     # local recruitment-rate A-catalysed change of M to U (recruited conversion)
-    alpha2 = 200*len(mt_region)#*97
+    alpha2 = 250*len(mt_region)#*97
     # local recruitment-rate A-catalysed change of U to A (recruited conversion)
-    alpha3 = 200*len(mt_region)#*97
+    alpha3 = 250*len(mt_region)#*97
     # global recruitment-rate (recruited conversion of A (0) to U (1))
-    alpha4 = 200*len(mt_region)#*0.05
+    alpha4 = 250*len(mt_region)#*0.05
     # spontaneous conversion-rate (direct conversion of A to U)
     beta1 = direct*len(mt_region)#*0.05 
     # spontaneous conversion-rate (direct conversion)
@@ -51,7 +51,7 @@ def simple(X_Y):
     beta5 = X_Y[4]
 
     if N == 21:
-        beta6 = 50#*len(mt_region)#   
+        beta6 = 25#50#*len(mt_region)#   
         beta5 = 0#1000
    
     if N == 21:
